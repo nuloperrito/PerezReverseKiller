@@ -1,0 +1,10 @@
+Autor: González Pérez
+
+Pérez Reverse Killer puede hacer más que solo funciones básicas de gestión de archivos, como crear, copiar, modificar, eliminar, cortar, comprimir o extraer; también ofrece una variedad de características avanzadas diseñadas específicamente para desarrolladores y entusiastas de Android, tales como: edición APK, edición DEX, edición ARSC, edición XML binario, DEX2JAR, JAR2DEX, generación de encabezados/vinculaciones JNI, ZIP Align, descompilación Java y ODEX2DEX, etc.
+
+Novedades en esta versión:
+1. Soporte añadido para visualizar, editar y extraer archivos comprimidos 7z;
+2. Actualización de múltiples componentes, incluyendo dex2jar, dx/d8, smali, baksmali, el firmador de APK, el descompilador jadx y el descompilador vineflower;
+3. Añadido soporte preliminar para resaltado de sintaxis en el editor de código;
+4. Corrección y mejora de las capacidades de generación de encabezados y vinculaciones JNI;
+5. Adaptación preliminar de la visualización e interacción de la interfaz de usuario para Android 14 y versiones posteriores.
