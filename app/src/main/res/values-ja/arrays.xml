@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="translate">
+        <item>翻訳</item>
+    </string-array>
+    <string-array name="translate_provider">
+        <item>百度翻訳</item>
+        <item>Bing翻訳</item>
+    </string-array>
+    <string-array name="language">
+        <item>自動認識</item>
+        <item>中国語</item>
+        <item>英語</item>
+        <item>日本語</item>
+        <item>韓国語</item>
+        <item>フランス語</item>
+        <item>タイ語</item>
+        <item>ロシア語</item>
+        <item>ドイツ語</item>
+        <item>ギリシャ語</item>
+        <item>イタリア語</item>
+        <item>スペイン語</item>
+        <item>ポルトガル語</item>
+        <item>アラビア語</item>
+    </string-array>
+
+    <string-array name="rank_criteria">
+        <item>名前で並べ替え</item>
+        <item>タイプで並べ替え</item>
+        <item>日付で並べ替え</item>
+        <item>サイズで並べ替え</item>
+    </string-array>
+
+    <string-array name="dialog_menu">
+        <item>デフォルトで開く</item>
+        <item>テキストエディタで編集</item>
+        <item>削除</item>
+        <item>名前変更</item>
+        <item>コピー</item>
+        <item>切り取り</item>
+        <item>権限</item>
+    </string-array>
+
+    <string-array name="search_mod">
+        <item>コード内で文字列を検索</item>
+        <item>コード内で関数を検索</item>
+        <item>コード内で定数を検索</item>
+    </string-array>
+
+    <string-array name="entries_font_type_prefs">
+        <item>等幅フォント</item>
+        <item>セリフ体フォント</item>
+        <item>サンセリフフォント</item>
+    </string-array>
+</resources>
