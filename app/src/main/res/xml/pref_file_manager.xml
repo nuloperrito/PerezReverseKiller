@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/pref_category_display_sort">
+        <ListPreference
+            android:key="pref_key_sort_by"
+            android:title="@string/pref_title_sort_by"
+            android:summary="%s"
+            android:dialogTitle="@string/pref_title_sort_by"
+            android:defaultValue="0"
+            android:entries="@array/rank_criteria"
+            android:entryValues="@array/rank_criteria_values" />
+
+        <CheckBoxPreference
+            android:key="pref_key_sort_reverse"
+            android:title="@string/pref_title_sort_reverse"
+            android:summary="@string/pref_summary_sort_reverse"
+            android:defaultValue="false" />
+
+        <CheckBoxPreference
+            android:key="pref_key_show_hidden"
+            android:title="@string/pref_title_show_hidden"
+            android:summary="@string/pref_summary_show_hidden"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_category_file_operations">
+        <CheckBoxPreference
+            android:key="pref_key_confirm_delete"
+            android:title="@string/pref_title_confirm_delete"
+            android:summary="@string/pref_summary_confirm_delete"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_category_advanced">
+        <CheckBoxPreference
+            android:key="pref_key_enable_thumbnails"
+            android:title="@string/pref_title_enable_thumbnails"
+            android:summary="@string/pref_summary_enable_thumbnails"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_category_apk_signing">
+        <CheckBoxPreference
+            android:key="pref_key_use_debug_keystore"
+            android:title="@string/pref_title_use_debug_keystore"
+            android:summary="@string/pref_summary_use_debug_keystore"
+            android:defaultValue="true" />
+
+        <Preference
+            android:key="pref_key_keystore_path"
+            android:title="@string/pref_title_keystore_path"
+            android:summary="@string/pref_summary_keystore_path" />
+        <EditTextPreference
+            android:key="pref_key_keystore_alias"
+            android:title="@string/pref_title_keystore_alias"
+            android:summary="@string/pref_summary_keystore_alias"
+            android:dialogTitle="@string/pref_title_keystore_alias" />
+        <EditTextPreference
+            android:key="pref_key_keystore_alias_password"
+            android:title="@string/pref_title_keystore_alias_password"
+            android:summary="@string/pref_summary_keystore_alias_password"
+            android:dialogTitle="@string/pref_title_keystore_alias_password" />
+        <EditTextPreference
+            android:key="pref_key_keystore_password"
+            android:title="@string/pref_title_keystore_password"
+            android:summary="@string/pref_summary_keystore_password"
+            android:dialogTitle="@string/pref_title_keystore_password" />
+
+        <PreferenceCategory android:title="@string/pref_category_signature_schemes">
+            <CheckBoxPreference
+                android:key="pref_key_sign_v1"
+                android:title="@string/pref_title_sign_v1"
+                android:summary="@string/pref_summary_sign_v1"
+                android:defaultValue="true" />
+            <CheckBoxPreference
+                android:key="pref_key_sign_v2"
+                android:title="@string/pref_title_sign_v2"
+                android:summary="@string/pref_summary_sign_v2"
+                android:defaultValue="true" />
+            <CheckBoxPreference
+                android:key="pref_key_sign_v3"
+                android:title="@string/pref_title_sign_v3"
+                android:summary="@string/pref_summary_sign_v3"
+                android:defaultValue="false" />
+            <CheckBoxPreference
+                android:key="pref_key_sign_v4"
+                android:title="@string/pref_title_sign_v4"
+                android:summary="@string/pref_summary_sign_v4"
+                android:defaultValue="false" />
+        </PreferenceCategory>
+
+        <CheckBoxPreference
+            android:key="pref_key_enable_zipalign"
+            android:title="@string/pref_title_enable_zipalign"
+            android:summary="@string/pref_summary_enable_zipalign"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+</PreferenceScreen>
