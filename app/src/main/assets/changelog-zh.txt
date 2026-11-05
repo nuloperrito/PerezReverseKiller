@@ -1,0 +1,10 @@
+作者：González Pérez
+
+佩雷斯逆向杀手可不仅可以完成基本的文件管理功能，例如：文件的新建、复制、修改、删除、剪切、压缩、解压缩，还具有作为Android开发人员和发烧友专用的各种高级功能，例如：Apk编辑、Dex编辑、Arsc编辑、二进制Xml编辑、Dex转Jar、Jar转Dex、JNI标头生成、Zip对齐、Java源码反编译、ODEX转换为标准DEX等。
+
+此版本更新：
+1. 新增 7z 压缩文件查看、编辑和解压功能；
+2. 更新 dex2jar、dx/d8、smali、baksmali、APK 签名器、jadx 反编译器和 vineflower 反编译器等多个组件；
+3. 初步支持代码编辑器语法高亮；
+4. 修复并拓展 JNI 标头和绑定生成能力；
+5. 初步适配 Android 14 及以上版本的 UI 显示和交互。

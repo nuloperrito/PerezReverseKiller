@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:text="@string/purgador_hints" />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/empezar"
+        android:text="@string/start" />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:enabled="false"
+        android:id="@+id/detener"
+        android:text="@string/stop" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#de59a0"
+        android:id="@+id/tvRemSiz"
+        android:gravity="center"
+        android:paddingTop="5dp" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#4e8fde"
+        android:id="@+id/tvWriteSpd"
+        android:gravity="center"
+        android:paddingTop="10sp" />
+
+</LinearLayout>

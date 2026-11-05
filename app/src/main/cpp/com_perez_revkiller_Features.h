@@ -1,0 +1,36 @@
+#include <jni.h>
+
+#ifndef _Included_com_perez_revkiller_Features
+#define _Included_com_perez_revkiller_Features
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+JNIEXPORT jint JNICALL Java_com_perez_revkiller_Features_ExtractAllRAR
+(JNIEnv *, jclass, jstring, jstring);
+
+JNIEXPORT jboolean JNICALL Java_com_perez_revkiller_Features_Oat2Dex
+(JNIEnv *, jclass, jstring);
+
+JNIEXPORT jboolean JNICALL Java_com_perez_revkiller_Features_Odex2Dex
+(JNIEnv *, jclass, jstring, jstring);
+
+JNIEXPORT jboolean JNICALL Java_com_perez_revkiller_Features_isValidElf
+(JNIEnv *, jclass, jstring);
+
+JNIEXPORT jlong JNICALL Java_com_perez_revkiller_Features_ELFHash
+(JNIEnv *, jclass, jstring);
+
+JNIEXPORT jint JNICALL Java_com_perez_revkiller_Features_dumpDex
+(JNIEnv *, jclass, jint, jstring);
+
+JNIEXPORT jint JNICALL Java_com_perez_revkiller_Features_openFd
+(JNIEnv *, jclass, jstring);
+
+JNIEXPORT jobject JNICALL
+Java_com_perez_revkiller_Features_modifyTimestamp(JNIEnv *, jclass , jint, jobject);
+
+#ifdef __cplusplus
+}
+#endif
+#endif

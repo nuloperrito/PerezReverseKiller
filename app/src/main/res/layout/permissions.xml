@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 4x4 Perm Matrix Table -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0,1,2,3">
+
+            <!-- Title Column -->
+            <TableRow android:gravity="center_vertical" android:paddingBottom="8dp">
+                <TextView
+                    android:gravity="center"
+                    android:text=""
+                    android:textStyle="bold" />
+                <TextView
+                    android:gravity="center"
+                    android:text="@string/perm_read"
+                    android:textStyle="bold" />
+                <TextView
+                    android:gravity="center"
+                    android:text="@string/perm_write"
+                    android:textStyle="bold" />
+                <TextView
+                    android:gravity="center"
+                    android:text="@string/perm_exec"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <!-- Owner Column -->
+            <TableRow android:gravity="center_vertical" android:paddingVertical="4dp">
+                <TextView
+                    android:gravity="center"
+                    android:text="@string/perm_owner" />
+                <CheckBox
+                    android:id="@+id/ckOwnRead"
+                    android:layout_gravity="center" />
+                <CheckBox
+                    android:id="@+id/ckOwnWrite"
+                    android:layout_gravity="center" />
+                <CheckBox
+                    android:id="@+id/ckOwnExec"
+                    android:layout_gravity="center" />
+            </TableRow>
+
+            <!-- Group 列 -->
+            <TableRow android:gravity="center_vertical" android:paddingVertical="4dp">
+                <TextView
+                    android:gravity="center"
+                    android:text="@string/perm_group" />
+                <CheckBox
+                    android:id="@+id/ckGrpRead"
+                    android:layout_gravity="center" />
+                <CheckBox
+                    android:id="@+id/ckGrpWrite"
+                    android:layout_gravity="center" />
+                <CheckBox
+                    android:id="@+id/ckGrpExec"
+                    android:layout_gravity="center" />
+            </TableRow>
+
+            <!-- Other 列 -->
+            <TableRow android:gravity="center_vertical" android:paddingVertical="4dp">
+                <TextView
+                    android:gravity="center"
+                    android:text="@string/perm_other" />
+                <CheckBox
+                    android:id="@+id/ckOthRead"
+                    android:layout_gravity="center" />
+                <CheckBox
+                    android:id="@+id/ckOthWrite"
+                    android:layout_gravity="center" />
+                <CheckBox
+                    android:id="@+id/ckOthExec"
+                    android:layout_gravity="center" />
+            </TableRow>
+
+            <!-- Special Column (SUID, SGID, Sticky) -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingVertical="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/perm_special" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/ckSpecialSuid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/perm_suid"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/ckSpecialSgid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/perm_sgid"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/ckSpecialSticky"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/perm_sticky"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="12dp"
+            android:background="?android:attr/dividerVertical" />
+
+        <!-- Octal Value Real-time Input Field -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/perm_octal_label"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etPermOctal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:digits="01234567"
+                android:hint="@string/perm_input_hint"
+                android:inputType="number"
+                android:maxLength="4" />
+        </LinearLayout>
+
+        <!-- Symbol Preview Column -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/perm_symbolic_label"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvPermSymbolic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="monospace"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Action buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCancel"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@android:string/cancel" />
+
+            <Button
+                android:id="@+id/btnOk"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@android:string/ok" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
